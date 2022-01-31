@@ -3,7 +3,7 @@
 
 Este es un repositorio donde encontrarás soluciones de problemas sobre la lógica de programación en JavaScript.
 
-Estos ejercicios fueron planeados por el profesor Jon MirCha y nuestro profesor Abraham Alonso Quesada Castro de nuestro curso de programación en el INA (Instituto Nacional de Aprendizaje) Costa Rica.
+Estos ejercicios fueron recopilados en la web y planteados por el profesor Jon MirCha y nuestro profesor docente Abraham Alonso Quesada Castro de nuestro curso de programación en el INA (Instituto Nacional de Aprendizaje) Costa Rica.
 
 
 [Curso de JavaScript del professor Jonathan Mircha](https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
