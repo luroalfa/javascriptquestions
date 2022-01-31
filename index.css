@@ -1,20 +1,23 @@
+/* Formateamos estilos */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Inicializamos variables */
 :root{
   --colorBackground : #1c1f2a;
   --colorTexto: rgb(235, 235, 235);
   --colorBoton: #c99700;
 }
 
-
+/* Le damos estilo a nuestro body */
 body {
   background-color: var(--colorBackground);
   color: var(--colorTexto);
 }
+
+/* Creamos una clase que va a contener a nuestros usuarios */
 .containerUsers{
   width: 100%;
   margin-top: 10px;
@@ -34,18 +37,7 @@ body {
   text-align: center;
   padding-top: 20px;
 }
-.subTitulo {
-  text-align: center;
-}
-.cinzel{
-  font-family: 'Cinzel Decorative', cursive;
-  color: #fff;
-}
-.rodri{
-  color: var(--colorBoton);
-}
-.parche{
-}
+
 .container{
   margin: 10px 40px 20px 40px;
   display: grid;
