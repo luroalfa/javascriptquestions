@@ -9,6 +9,7 @@
   --colorBackground : #1c1f2a;
   --colorTexto: rgb(235, 235, 235);
   --colorBoton: #c99700;
+  --tipografiaGeneral: 'Roboto', sans-serif;
 }
 
 /* Le damos estilo a nuestro body */
@@ -16,47 +17,61 @@ body {
   background-color: var(--colorBackground);
   color: var(--colorTexto);
 }
-
-/* Creamos una clase que va a contener a nuestros usuarios */
-.containerUsers{
-  width: 100%;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  
+/* Damos estilos a nuestro header */
+header{
+  text-align: center;
+  margin: 40px;
+  font-family: var(--tipografiaGeneral);;
 }
-.user{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+/* Cambiamos tamaño a los parrafos del header */
+header p{
+  font-size: 1.1em;
 }
-
+/* Reducimos el tamaño al ul y lo centramos */
+header ul{
+  width: 50%;
+  margin: auto;
+}
+/* Creamos una clase para nuestro titulo general */
 .titulo {
   text-align: center;
-  padding-top: 20px;
+  margin: 20px;
 }
-
+/* Creamos una clase contenedora que envolvera toda nuestra web */
 .container{
   margin: 10px 40px 20px 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   
 }
-
+/* Creamos un mediaQuery para que sea un poco adaptable a otros dispositivos menores de 800px */
 @media only screen and (max-width: 800px){
   .container{
     grid-template-columns: repeat(1, 1fr);
   }
 }
+/* Creamos un subcontenedor para tener por bloques nuestros ejercicios */
 .subContainer{
   margin: 20px;
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+/* Creamos estilos a nuestro subtitulo */
+.subTitle{
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+/* Modificamos nuestro span contenido en h3  */
+.subTitle span{
+  font-weight: bold;
+  font-size: 1em;
+}
+/* Le damos estilos nuestros párrafos generales */
+.subContainer p {
+  font-family: var(--tipografiaGeneral);
+}
+/* Cramos una clase subcontenedora que envolvera nuestras etiquetas input bottom y span respuesta */
 .resultsContainer{
   /* text-align: center; */
   display: flex;
@@ -64,6 +79,7 @@ body {
   align-items: center;
 
 }
+/* Le damos estilo a nuestros input */
 .input {
   margin: 10px;
   border-radius: 5px;
@@ -71,8 +87,9 @@ body {
   text-align: center;
   width: 300px;
 }
-
+/* Le damos estilos a nuestros botones */
 .botoncito {
+  cursor: pointer;
   padding: 5px;
   font-weight: 400;
   font-size: 20px;
@@ -82,17 +99,35 @@ body {
   border: solid 1px white;
   width: 250px;
 }
-
+/* Creamos un hover para nuestros botones */
 .botoncito:hover {
   background-color: var(--colorBackground);
 }
-
-
-#SpanResultadoHTML{
+/* Le damos estilo a nuestra span con un tipo de tipografia */
+.result {
+  font-family: var(--tipografiaGeneral);
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.subrayado{
-  color: yellow;
+/* Creamos una clase que va a contener a nuestros usuarios */
+.containerUsers{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+/* A los párrafos dentro del contenedor containerUsers le damos un color */
+.containerUsers p{
+  color: var(--colorBoton);
+}
+/* Formateamos nuestras imagenes */
+.user{
+  border: double;
+  border-color: var(--colorBoton);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 5px;
 }

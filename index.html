@@ -5,168 +5,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlazamos nuestro html con css -->
     <link rel="stylesheet" href="index.css">
-    <title>Javascript-Exercises</title>
+    <!-- Incorporamos la tipografia Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Javascript-Ejercicios</title>
 </head>
 
 <body>
-    <!-- Titulo y subtitulo. -->
-    <h1 class="titulo">Javascript-Exercises</h1>
+    <header>
+        <!-- Titulo principal -->
+        <h1 class="titulo">
+            Javascript-Exercises
+        </h1>
+        <p>
+            Este es un proyecto donde encontrarás soluciones de problemas sobre la lógica de programación en JavaScript.
+        </p>
+        <p>
+            El proyecto esta desarrollado en forma grupal utilizando Git/GitHub para llevar el control de nuestra
+            aplicación.
+        </p>
+        <p>Resolvemos varios ejercicios de javascript que fueron recopilados de la web y planteados por los profesores:
+        </p>
+        <p>Jon MirCha y Abraham Alonso Quesada.</p>
+        <br>
+        <h2>Objetivos generales del proyecto</h2>
+        <ul>
+            <ol>1) Resolver los problemas en JavaScript.</ol>
+            <ol>2) Entrelazar las 3 tecnologías (Html-Css-JavaScript).</ol>
+            <ol>3) Utilizar Git/GitHub para llevar el control de nuestro proyecto.</ol>
+            <ol>4) Hacer el deploy de nuestro proyecto utilizando Netlify. Como hosting, esto nos ayudara a entrelazar
+                GitHub con Netlify nuestro proyecto y llevar un proceso de integración continua y despliegue continuo.
+            </ol>
+            <ol>5) Resolver en conjunto problemas que se presenten en el camino. Tanto en temas de JavaScript, temas en
+                GitHub y también en Netlify.</ol>
+            <ol>6) Utilizaremos Asana. Para la gestión de seguimiento de tareas, organización de trabajos y
+                planificación de entrega de tareas como proyecto final.</ol>
+        </ul>
+    </header>
 
-    <div class="container">
+    <!-- Div contenedor de la página web -->
+    <main class="container">
 
         <!-- Primer bloque -->
-        <div class="subContainer">
-            <h3>Exercise #1</h3>
-            <p>Write a function that counts the number of characters in a text string passed by the user..</p>
-            <div class="resultsContainer">
-                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text"><button id="boton1"
-                    class="botoncito">See Size</button>
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#1</span></h3>
+            <p>Programa una función que cuente el número de caracteres de una cadena de texto.</p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id="Span1ResultadoHTML">Resultado</span>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
                 <div class="containerUsers">
-                    <p>Brandon Ortiz</p> <img class="user" src="./assets/img/participants/Brandon.jpg" alt="">
-                </div>
-            </div>
+                    <p>Resuelto por Brandon Ortiz</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/Brandon.jpg" target="_blank"
+                            alt="Fotografia de Brandon">
 
-        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
 
         <!-- Segundo bloque -->
-        <div class="subContainer">
-            <h3>Exercise #2</h3>
-            <p>Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe.
-                miFuncion("Hola Mundo", 4) devolverá "Hola".</p>
-            <div class="resultsContainer">
-                <input class="input" id="input2" placeholder="Introduzca la palabra" type="text">
-                <input class="input" id="input3" placeholder="Introduzca la cantidad a recortar" type="text"><button
-                    id="boton2" class="botoncito">Calcular</button>
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#2</span></h3>
+            <p>Programa una función que te devuelva el texto recortado según el número de caracteres indicados.</p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id="Span2ResultadoHTML">Resultado</span>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
                 <div class="containerUsers">
-                    <p>By Luis Rodriguez</p> <img class="user" src="./assets/img/participants/Luis.jpg" alt="">
+                    <p>Resuelto por Luis Rodríguez F.</p>
+                    <a href="https://rodriguezfallasluis.com/" target="_blank">
+                        <img class="user" src="./assets/img/participants/Luis.jpg" alt="Fotografia de Luis">
+                    </a>
                 </div>
-
-            </div>
-        </div>
+            </article>
+        </section>
 
         <!-- Tercer bloque -->
-        <div class="subContainer">
-            <h3>Exercise #3</h3>
-            <p>Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter,
-                pe.
-                miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].</p>
-            <div class="resultsContainer">
-                <input id="inputExercise3-1" class="input" placeholder="Introduzca la palabra" type="text">
-                <button id="inputExercise3-1" class="botoncito">Calcular</button>
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#3</span></h3>
+            <p>Desarrolle un código que solicite al usuario su edad, si la persona tiene 18 años o más debe devolver los
+                siguientes mensajes:
+                “Usted es mayor de edad” <br>Si la persona no cumple con este requisito el mensaje será: “Usted es
+                menor de
+                edad”<br>Si la persona es mayor a 65 años, el mensaje será: “Usted es un adulto mayor”.
+            </p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id=" inputExercise-Resultado" id="SpanResultadoHTML">Resultado</span>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
                 <div class="containerUsers">
-                    <p>By Mariela González</p> <img class="user" src="./assets/img/participants/mariela.jpeg" alt="">
+                    <p>Resuelto por Mariela Gonzalez</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/mariela.jpeg" alt="Fotografia de Mariela">
+                    </a>
                 </div>
-            </div>
-
-        </div>
+            </article>
+        </section>
 
         <!-- Cuarto bloque -->
-        <div class="subContainer">
-            <h3>Exercise #4</h3>
-            <p>Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo
-                Hola
-                Mundo Hola Mundo..</p>
-            <div class="resultsContainer">
-                <input class="input" placeholder="Aqui." type="text"><button class="botoncito">Calcular</button>
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#4</span></h3>
+            <p> Utilizando JavaScript y HTML, desarrolle un programa que permita al usuario seleccionar alguna de las
+                siguientes opciones de producto, debe devolver el precio del producto seleccionado, el precio del
+                producto dependerá de la opción seleccionada: <br> A- Horno tostador 45 000 <br>B- Playstation 650 000
+                <br>C-
+                Televisor OLED 800 000 <br>D- Batidora 25 000 <br>E- Control 50 000
+            </p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id="SpanResultadoHTML">Resultado</span>
-            </div>
-
-        </div>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
+                <div class="containerUsers">
+                    <p>Resuelto por Gabriel Vega L.</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/Brandon.jpg" target="_blank"
+                            alt="Fotografia de Gabriel Vega">
+                    </a>
+                </div>
+            </article>
+        </section>
 
         <!-- Quinto bloque -->
-        <div class="subContainer">
-            <h3>Exercise #5</h3>
-            <p>Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo")
-                devolverá "odnuM aloH".</p>
-            <div class="resultsContainer">
-                <input class="input" placeholder="Aqui." type="text"><button class="botoncito">Calcular</button>
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#5</span></h3>
+            <p>Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter.
+            </p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id="SpanResultadoHTML">Resultado</span>
-            </div>
-        </div>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
+                <div class="containerUsers">
+                    <p>Resuelto por Susana</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/Brandon.jpg" target="_blank" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
 
         <!-- Sexto bloque -->
-        <div class="subContainer">
-            <h3>Exercise #6</h3>
-            <p>Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe.
-                miFuncion("hola mundo adios mundo", "mundo") devolverá 2.</p>
-            <div class="resultsContainer">
-                <input class="input" placeholder="Aqui." type="text"><button class="botoncito">Calcular</button>
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#6</span></h3>
+            <p>Programa una función que repita un texto X veces.</p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id="SpanResultadoHTML">Resultado</span>
-            </div>
-        </div>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
+                <div class="containerUsers">
+                    <p>Resuelto por Irina</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/Brandon.jpg" target="_blank" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
 
-        <!-- Septimo bloque -->
-        <div class="subContainer">
-            <h3>Exercise #7</h3>
-            <p>Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un
-                sentido que en otro), pe. mifuncion("Salas") devolverá true.</p>
-            <div class="resultsContainer">
-                <input class="input" placeholder="Aqui." type="text"><button class="botoncito">Calcular</button>
+        <!-- Séptimo bloque -->
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#7</span></h3>
+            <p>Programa una función que invierta las palabras de una cadena de texto.</p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id="SpanResultadoHTML">Resultado</span>
-            </div>
-        </div>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
+                <div class="containerUsers">
+                    <p>Resuelto por Jose Umaña R.</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/Brandon.jpg" target="_blank" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
 
         <!-- Octavo bloque -->
-        <div class="subContainer">
-            <h3>Exercise #8</h3>
-            <p>Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2,
-                xyz3, xyz4 y xyz5", "xyz") devolverá "1, 2, 3, 4 y 5..</p>
-            <div class="resultsContainer">
-                <input class="input" placeholder="Aqui." type="text"><button class="botoncito">Calcular</button>
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#8</span></h3>
+            <p>Programa una función para contar el número de veces que se repite una palabra en un texto largo.</p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
                 <br>
-                <span id="SpanResultadoHTML">Resultado</span>
-            </div>
-        </div>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
+                <div class="containerUsers">
+                    <p>Resuelto por Eddie</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/Brandon.jpg" target="_blank" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
 
+        <!-- Noveno bloque -->
+        <section class="subContainer">
+            <h3 class="subTitle">Ejercicio <span>#9</span></h3>
+            <p>Programa una función que cuente el número de caracteres de una cadena de texto.</p>
+            <article class="resultsContainer">
+                <input id="input1" class="input" placeholder="Introduzca la palabra" type="text">
+                <button id="boton1" class="botoncito">Resultado</button>
+                <br>
+                <span id="Span1ResultadoHTML" class="result">Resultado</span>
+                <div class="containerUsers">
+                    <p>Resuelto por Fatima</p>
+                    <a href="">
+                        <img class="user" src="./assets/img/participants/Brandon.jpg" target="_blank" alt="">
+                    </a>
+                </div>
+            </article>
+        </section>
 
+        <footer>
 
+        </footer>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-
-
-
-
-
+    <!-- Enlazamos nuestro html con javascript -->
     <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
