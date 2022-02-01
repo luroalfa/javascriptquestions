@@ -29,7 +29,7 @@ function RecortarCaracter(texto, longi) {
 
 function calcSizeCharacters(palabra) {
   if (isNaN(palabra)) {
-    return `The word <span class="subrayado">${palabra}</span> has ${palabra.length} characters.`;
+    return `La palabra <span class="subrayado">${palabra}</span> tiene ${palabra.length} caracteres.`;
   } else {
     alert("Por favor introducir un texto.");
   }
