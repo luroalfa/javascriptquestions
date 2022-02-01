@@ -1,15 +1,15 @@
 /* Formateamos estilos */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 /* Inicializamos variables */
-:root{
-  --colorBackground : #1c1f2a;
+:root {
+  --colorBackground: #1c1f2a;
   --colorTexto: rgb(235, 235, 235);
   --colorBoton: #c99700;
-  --tipografiaGeneral: 'Roboto', sans-serif;
+  --tipografiaGeneral: "Roboto", sans-serif;
 }
 
 /* Le damos estilo a nuestro body */
@@ -18,17 +18,17 @@ body {
   color: var(--colorTexto);
 }
 /* Damos estilos a nuestro header */
-header{
+header {
   text-align: center;
   margin: 40px;
-  font-family: var(--tipografiaGeneral);;
+  font-family: var(--tipografiaGeneral);
 }
 /* Cambiamos tamaño a los parrafos del header */
-header p{
+header p {
   font-size: 1.1em;
 }
 /* Reducimos el tamaño al ul y lo centramos */
-header ul{
+header ul {
   width: 50%;
   margin: auto;
 }
@@ -37,37 +37,36 @@ header ul{
   text-align: center;
   margin: 20px;
 }
-.cursiva{
+.cursiva {
   font-style: italic;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 /* Creamos una clase contenedora que envolvera toda nuestra web */
-.container{
+.container {
   margin: 10px 40px 20px 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
 }
 /* Creamos un mediaQuery para que sea un poco adaptable a otros dispositivos menores de 800px */
-@media only screen and (max-width: 800px){
-  .container{
+@media only screen and (max-width: 800px) {
+  .container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 /* Creamos un subcontenedor para tener por bloques nuestros ejercicios */
-.subContainer{
+.subContainer {
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 /* Creamos estilos a nuestro subtitulo */
-.subTitle{
+.subTitle {
   text-transform: uppercase;
   font-size: 1.5em;
 }
 /* Modificamos nuestro span contenido en h3  */
-.subTitle span{
+.subTitle span {
   font-weight: bold;
   font-size: 1em;
 }
@@ -76,12 +75,11 @@ header ul{
   font-family: var(--tipografiaGeneral);
 }
 /* Cramos una clase subcontenedora que envolvera nuestras etiquetas input bottom y span respuesta */
-.resultsContainer{
+.resultsContainer {
   /* text-align: center; */
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 /* Le damos estilo a nuestros input */
 .input {
@@ -114,24 +112,29 @@ header ul{
   margin-bottom: 10px;
 }
 /* Creamos una clase que va a contener a nuestros usuarios */
-.containerUsers{
+.containerUsers {
   width: 100%;
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 /* A los párrafos dentro del contenedor containerUsers le damos un color */
-.containerUsers p{
+.containerUsers p {
   color: var(--colorBoton);
 }
 /* Formateamos nuestras imagenes */
-.user{
+.user {
   border: double;
   border-color: var(--colorBoton);
   width: 70px;
   height: 70px;
   border-radius: 50%;
   padding: 5px;
+}
+
+/* Brando */
+.subrayado {
+  color: yellow;
 }

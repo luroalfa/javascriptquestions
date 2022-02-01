@@ -1,23 +1,30 @@
 "use strict";
 
-var boton1 = window.document.getElementById("boton1");
-var boton2 = window.document.getElementById("boton2");
+// Variables hechas por brandon, para mi mi primer bloque
+var primerBloque__Boton1 = document.getElementById("primerBloque__Boton1");
+var boton2 = document.getElementById("boton2");
 
 // Evento del primer ejercicio
-boton1.addEventListener("click", () => {
-  document.getElementById("Span1ResultadoHTML").innerHTML = calcSizeCharacters(`${document.getElementById("input1").value}`);
+primerBloque__Boton1.addEventListener("click", () => {
+  document.getElementById("primerBloque__resultado").innerHTML =
+    calcSizeCharacters(
+      `${document.getElementById("primerBloque__Input1").value}`
+    );
 });
 
 // Evento del segundo ejercicio
 boton2.addEventListener("click", () => {
-  document.getElementById("Span2ResultadoHTML").innerHTML = RecortarCaracter(`${document.getElementById("input2").value}`, parseInt(`${document.getElementById("input3").value}`));
+  document.getElementById("Span2ResultadoHTML").innerHTML = RecortarCaracter(
+    `${document.getElementById("input2").value}`,
+    parseInt(`${document.getElementById("input3").value}`)
+  );
 });
 
-
-
-
 function RecortarCaracter(texto, longi) {
-  return `The cut text is: <span class="subrayado">${texto.slice(0, longi)}</span>.`;
+  return `The cut text is: <span class="subrayado">${texto.slice(
+    0,
+    longi
+  )}</span>.`;
 }
 
 function calcSizeCharacters(palabra) {
