@@ -21,7 +21,7 @@ boton2.addEventListener("click", () => {
 });
 
 function RecortarCaracter(texto, longi) {
-  return `La palabra es: <span class="subrayado">${texto.slice(
+  return `La palabra tiene: <span class="subrayado">${texto.slice(
     0,
     longi
   )}</span>.`;
