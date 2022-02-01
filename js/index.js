@@ -21,7 +21,7 @@ boton2.addEventListener("click", () => {
 });
 
 function RecortarCaracter(texto, longi) {
-  return `The cut text is: <span class="subrayado">${texto.slice(
+  return `La palabra es: <span class="subrayado">${texto.slice(
     0,
     longi
   )}</span>.`;
@@ -29,7 +29,7 @@ function RecortarCaracter(texto, longi) {
 
 function calcSizeCharacters(palabra) {
   if (isNaN(palabra)) {
-    return `The word <span class="subrayado">${palabra}</span> has ${palabra.length} characters.`;
+    return `La palabra <span class="subrayado">${palabra}</span> tiene ${palabra.length} caracteres.`;
   } else {
     alert("Por favor introducir un texto.");
   }
