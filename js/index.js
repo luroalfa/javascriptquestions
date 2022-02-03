@@ -47,3 +47,25 @@ function RecortarCaracter(texto, longi) {
   }
 };
 
+
+
+// Inicializo variables boton para manejar el evento 
+var decimoBloque_boton = document.getElementById("decimoBloque_boton");
+var decimoBloque_resultado = document.getElementById("decimoBloque_resultado");
+// Evento disparador en espera de algun evento del ejercicio #10
+decimoBloque_boton.addEventListener("click", () => {
+  let decimoBloque_input1 = `${document.getElementById("decimoBloque_input1").value}`;
+  console.log(buscarCapicua(decimoBloque_input1));;
+});
+
+
+const buscarCapicua = (numero = 0) => {
+  if (!numero) return "Por favor ingresar un numero.";
+
+  let alreves = numero.toString().split("").reverse().join("");
+  if (alreves === numero) {
+    decimoBloque_resultado.innerHTML = `El número ingresado <span class="subrayado">${numero}</span>. SI es Capicúa.`;
+  } else {
+    decimoBloque_resultado.innerHTML = `El número ingresado <span class="subrayado">${numero}</span>. NO es Capicúa.`;
+  }
+};
