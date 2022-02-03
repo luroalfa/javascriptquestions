@@ -1,23 +1,33 @@
 "use strict";
 
 var boton1 = window.document.getElementById("boton1");
-var boton2 = window.document.getElementById("boton2");
+var boton2 = window.document.getElementById("segundoBloque_boton");
 
 // Evento del primer ejercicio
 boton1.addEventListener("click", () => {
   document.getElementById("Span1ResultadoHTML").innerHTML = calcSizeCharacters(`${document.getElementById("input1").value}`);
 });
 
-// Evento del segundo ejercicio
+
+
+// Evento del segundo ejercicio Luis Rodriguez
 boton2.addEventListener("click", () => {
-  document.getElementById("Span2ResultadoHTML").innerHTML = RecortarCaracter(`${document.getElementById("input2").value}`, parseInt(`${document.getElementById("input3").value}`));
+  let texto = `${document.getElementById("segundoBloque_input1").value}`;
+  let longi = parseInt(`${document.getElementById("segundoBloque_input2").value}`);
+  document.getElementById("segundoBloque_resultado").innerHTML = RecortarCaracter(texto, longi);
 });
 
 
 
-
+//Funcion generada para el ejercicio #2
 function RecortarCaracter(texto, longi) {
-  return `The cut text is: <span class="subrayado">${texto.slice(0, longi)}</span>.`;
+  if (!texto) {
+    alert("Por favor ingresar una palabra para recortarla.");
+  } else if (!longi) {
+    alert("Por favor ingresar la cantidad a recortar")
+  } else {
+    return `El texto recortado es: <span class="subrayado">${texto.slice(0, longi)}</span>.`;
+  }
 }
 
 function calcSizeCharacters(palabra) {
