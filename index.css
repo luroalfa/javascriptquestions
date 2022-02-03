@@ -56,10 +56,11 @@ header ul {
 }
 /* Creamos un subcontenedor para tener por bloques nuestros ejercicios */
 .subContainer {
-  margin: 20px;
+  margin: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 /* Creamos estilos a nuestro subtitulo */
 .subTitle {
