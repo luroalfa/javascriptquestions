@@ -1,11 +1,16 @@
 "use strict";
 
-var boton1 = window.document.getElementById("boton1");
+// Variables hechas por brandon, para mi mi primer bloque
+var primerBloque__Boton1 = document.getElementById("primerBloque__Boton1");
+// Variables hechas por luis, para mi mi primer bloque
 var boton2 = window.document.getElementById("segundoBloque_boton");
 
 // Evento del primer ejercicio
-boton1.addEventListener("click", () => {
-  document.getElementById("Span1ResultadoHTML").innerHTML = calcSizeCharacters(`${document.getElementById("input1").value}`);
+primerBloque__Boton1.addEventListener("click", () => {
+  document.getElementById("primerBloque__resultado").innerHTML =
+    calcSizeCharacters(
+      `${document.getElementById("primerBloque__Input1").value}`
+    );
 });
 
 
@@ -17,8 +22,6 @@ boton2.addEventListener("click", () => {
   document.getElementById("segundoBloque_resultado").innerHTML = RecortarCaracter(texto, longi);
 });
 
-
-
 //Funcion generada para el ejercicio #2
 function RecortarCaracter(texto, longi) {
   if (!texto) {
@@ -28,11 +31,10 @@ function RecortarCaracter(texto, longi) {
   } else {
     return `El texto recortado es: <span class="subrayado">${texto.slice(0, longi)}</span>.`;
   }
-}
 
 function calcSizeCharacters(palabra) {
   if (isNaN(palabra)) {
-    return `The word <span class="subrayado">${palabra}</span> has ${palabra.length} characters.`;
+    return `La palabra <span class="subrayado">${palabra}</span> tiene ${palabra.length} caracteres.`;
   } else {
     alert("Por favor introducir un texto.");
   }
