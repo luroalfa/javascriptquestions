@@ -1,3 +1,4 @@
+
 /* Formateamos estilos */
 * {
   margin: 0;
@@ -133,8 +134,7 @@ header ul {
   border-radius: 50%;
   padding: 5px;
 }
-
-/* Brando */
-.subrayado {
+/* Clase generada para subrayar los resultados */
+.subrayado{
   color: yellow;
 }
