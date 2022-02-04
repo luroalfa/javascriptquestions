@@ -10,6 +10,7 @@
   --colorBackground: #1c1f2a;
   --colorTexto: rgb(235, 235, 235);
   --colorBoton: #c99700;
+  --colorTextoRepitar: #cfdb61;
   --tipografiaGeneral: "Roboto", sans-serif;
 }
 
@@ -19,10 +20,58 @@ body {
   color: var(--colorTexto);
 }
 /* Damos estilos a nuestro header */
-header {
+.header{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  max-width: 50rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
   text-align: center;
-  margin: 40px;
-  font-family: var(--tipografiaGeneral);
+}
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+.video video{
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.overlay{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(28,31,42);
+  background: linear-gradient(0deg, rgba(28,31,42,1) 0%, rgba(0,0,0,0.7035189075630253) 100%);
+  z-index: 1;
+}
+h1{
+  font-size: 6rem;
+}
+.typeStyle{
+  color: var(--colorTextoRepitar);
+  font-weight: bold;
+}
+/* border: 1px solid yellow; */
+.content{
+  z-index: 2;
+}  
+.subParrafo{
+  font-size: 1.2em;
 }
 /* Cambiamos tamaño a los parrafos del header */
 header p {
@@ -139,3 +188,5 @@ header ul {
 .subrayado{
   color: yellow;
 }
+
+
