@@ -51,6 +51,9 @@ function calcSizeCharacters(palabra) {
   } else {
     alert("Por favor introducir un texto.");
   }
+
+}
+
 };
 
 
@@ -98,6 +101,18 @@ function RecortarCaracter(texto, longi) {
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#5      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA SUSANA VARGAS
 
+//Hecho por Susana
+//function textosSeparados(){
+
+ /*textos =['Hola'];
+ let pregunta = prompt(('Estos son los textos agregados, desea agregar otro?')).toLowerCase();
+  if (pregunta === 'si'){
+    let cadena = prompt('Ingrese un texto: ');
+    cadena
+
+  } 
+ textos.push('cadena');
+ return textos*/
 
 
 
