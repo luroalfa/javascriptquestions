@@ -54,9 +54,6 @@ function calcSizeCharacters(palabra) {
 
 }
 
-};
-
-
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#2      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA LUIS RODRIGUEZ
@@ -100,22 +97,17 @@ function RecortarCaracter(texto, longi) {
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#5      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA SUSANA VARGAS
+//Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter.
 
-//Hecho por Susana
-//function textosSeparados(){
+var bloqueQuinto__Boton = document.querySelector("#bloqueQuinto__Boton");
 
- /*textos =['Hola'];
- let pregunta = prompt(('Estos son los textos agregados, desea agregar otro?')).toLowerCase();
-  if (pregunta === 'si'){
-    let cadena = prompt('Ingrese un texto: ');
-    cadena
+bloqueQuinto__Boton.addEventListener("click",()=>{
+  let text = `${document.getElementById("bloqueQuinto__Input1").value}`;
+  let arreglo = text.split(" ");
 
-  } 
- textos.push('cadena');
- return textos*/
-
-
-
+  document.getElementById("bloqueQuinto__Resultado").innerHTML = `El arreglo tiene un tamaño de: 
+  <span class="subrayado">${arreglo.length}</span><br>El arreglo es: [${arreglo}]`;
+}
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#6      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA IRINA VILLAREAL
