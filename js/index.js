@@ -142,6 +142,7 @@ bloqueQuinto__Boton.addEventListener("click", () => {
 // Inicializo variables boton para manejar el evento 
 var decimoBloque_boton = document.getElementById("decimoBloque_boton");
 var decimoBloque_resultado = document.getElementById("decimoBloque_resultado");
+var decimoBloque__significado = document.getElementById("decimoBloque__significado");
 // Evento disparador en espera de algun evento del ejercicio #10
 decimoBloque_boton.addEventListener("click", () => {
   let decimoBloque_input1 = `${document.getElementById("decimoBloque_input1").value}`;
@@ -152,13 +153,15 @@ const buscarCapicua = (numero = 0) => {
 
   let alreves = numero.toString().split("").reverse().join("");
   if (alreves === numero) {
-    decimoBloque_resultado.innerHTML = `El número ingresado <span class="subrayado">${numero}</span>. SI es Capicúa.`;
+    decimoBloque_resultado.innerHTML = `Al derecho <span class="subrayado">${numero}</span>.<br>Al revés <span class="subrayado">${alreves}</span>.<br> <span class="subrayado">SI es Capicúa.</span>`;
   } else {
-    decimoBloque_resultado.innerHTML = `El número ingresado <span class="subrayado">${numero}</span>. NO es Capicúa.`;
+    decimoBloque_resultado.innerHTML = `Al derecho <span class="subrayado">${numero}</span>.<br>Al revés <span class="subrayado">${alreves}</span>.<br> <span class="subrayado">NO es Capicúa.</span>`;
   }
 };
 
-
+decimoBloque__significado.addEventListener("click", () => {
+  alert("Capicúa\nadjetivo · nombre masculino\nQue se lee igual de izquierda a derecha que de derecha a izquierda.");
+});
 
 
 
