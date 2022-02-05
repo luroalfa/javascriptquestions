@@ -101,13 +101,13 @@ function RecortarCaracter(texto, longi) {
 
 var bloqueQuinto__Boton = document.querySelector("#bloqueQuinto__Boton");
 
-bloqueQuinto__Boton.addEventListener("click",()=>{
+bloqueQuinto__Boton.addEventListener("click", () => {
   let text = `${document.getElementById("bloqueQuinto__Input1").value}`;
   let arreglo = text.split(" ");
 
   document.getElementById("bloqueQuinto__Resultado").innerHTML = `El arreglo tiene un tamaño de: 
   <span class="subrayado">${arreglo.length}</span><br>El arreglo es: [${arreglo}]`;
-}
+});
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#6      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA IRINA VILLAREAL
