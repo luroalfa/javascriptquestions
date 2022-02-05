@@ -160,9 +160,8 @@ const buscarCapicua = (numero = 0) => {
 };
 
 decimoBloque__significado.addEventListener("click", () => {
-  alert("Capicúa\nadjetivo · nombre masculino\nQue se lee igual de izquierda a derecha que de derecha a izquierda.");
+  alert("En matemáticas:\nLa palabra capicúa (del catalán cap i cua, 'cabeza y cola') se refiere a cualquier número que se lee igual de izquierda a derecha que de derecha a izquierda.");
 });
-
 
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#11      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
