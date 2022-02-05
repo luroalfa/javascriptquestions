@@ -173,8 +173,9 @@ const buscarCapicua = (numero = 0) => {
    
   undecimoBloque_boton.addEventListener('click', function(){
 
-    let num = `${document.getElementById("undecimoBloque__input1").value}`,
-      undecimoBloque_resultado = document.getElementById('undecimoBloque_resultado'),
+    //let num = `${document.getElementById("undecimoBloque__input1").value}`;
+      alert(`${document.getElementById('undecimoBloque__input1').value}`);
+      let undecimoBloque_resultado = document.getElementById('undecimoBloque_resultado'),
       factorial;
       alert(num);
     for (let i = 1  ; i <= num; i++) {
