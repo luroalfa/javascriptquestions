@@ -188,5 +188,7 @@ header ul {
 .subrayado{
   color: yellow;
 }
-
+.cursor{
+  cursor: pointer;
+}
 
