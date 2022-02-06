@@ -167,7 +167,24 @@ decimoBloque__significado.addEventListener("click", () => {
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#11      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA SUSANA VARGAS
 
+ /*Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se
+    define como el producto de todos los números enteros positivos desde 1 hasta n)Por ejemplo: miFuncion(5)
+    devolverá 120.*/
+    
+  var undecimoBloque_boton = document.getElementById('undecimoBloque_boton');
+   
+  undecimoBloque_boton.addEventListener('click', function(){
 
+    //let num = `${document.getElementById("undecimoBloque__input1").value}`;
+      alert(`${document.getElementById('undecimoBloque__input1').value}`);
+      let undecimoBloque_resultado = document.getElementById('undecimoBloque_resultado'),
+      factorial;
+      alert(num);
+    for (let i = 1  ; i <= num; i++) {
+        factorial += i*(i+1);    
+    }
+    undecimoBloque_resultado.innerHTML = `El factorial de ${num} es: <span class"subrayado"> ${factorial}</span> `
+  });
 
 
 
