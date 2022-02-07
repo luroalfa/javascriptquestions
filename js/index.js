@@ -119,7 +119,14 @@ bloqueQuinto__Boton.addEventListener("click", () => {
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#7      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA JOSE UMAÑA
 
+var bloqueSetimo__boton = document.querySelector('#bloqueSetimo__boton');
 
+bloqueSetimo__boton.addEventListener('click',function(){
+  let texto = `${document.getElementById('bloqueSetimo__input1').value}`;
+  let string = texto.sort(' ');
+  let cadena = texto.reverse();
+  document.getElementById('bloqueSetimo__resultado').innerHTML = cadena
+});
 
 
 
