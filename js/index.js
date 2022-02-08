@@ -239,8 +239,30 @@ undecimoBloque_boton.addEventListener('click', function () {
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#18      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA JOSE UMAÑA
+//Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. 
+//miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
 
+var boton = document.getElementById("decimoOctavoBloque_boton");
+var vocal = 0;
+var cons = 0;
 
+boton.addEventListener("click", ()=>{
+  let texto = document.getElementById("decimoOctavoBloque_input1").value;
+  VerVocalesCons(texto.toLowerCase());
+  document.getElementById("decimoOctavoBloque_resultado").innerHTML = `Vocales = <span class="subrayado">${vocal}</span> Consonantes= <span class="subrayado">${cons}</span>`
+});
+
+function VerVocalesCons(texto){
+  for(let letra of texto){
+    if(/[aeiou]/.test(letra)){
+    vocal++;
+  }
+  if(/[bcdfghjklmnpqrstvwxyz]/.test(letra)){
+    cons++;
+  }
+  }
+  
+}
 
 
 
