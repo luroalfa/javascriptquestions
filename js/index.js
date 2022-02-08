@@ -242,23 +242,23 @@ undecimoBloque_boton.addEventListener('click', function () {
 //Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. 
 //miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
 
-var boton = document.getElementById("decimoOctavoBloque_boton");
-var vocal = 0;
-var cons = 0;
+var decimoOctavoBloque_boton = document.getElementById("decimoOctavoBloque_boton");
+var decimoOctavoBloque_vocal = 0;
+var decimoOctavoBloque_cons = 0;
 
-boton.addEventListener("click", ()=>{
+decimoOctavoBloque_boton.addEventListener("click", ()=>{
   let texto = document.getElementById("decimoOctavoBloque_input1").value;
   VerVocalesCons(texto.toLowerCase());
-  document.getElementById("decimoOctavoBloque_resultado").innerHTML = `Vocales = <span class="subrayado">${vocal}</span> Consonantes= <span class="subrayado">${cons}</span>`
+  document.getElementById("decimoOctavoBloque_resultado").innerHTML = `Vocales = <span class="subrayado">${decimoOctavoBloque_vocal}</span> Consonantes= <span class="subrayado">${decimoOctavoBloque_cons}</span>`
 });
 
 function VerVocalesCons(texto){
   for(let letra of texto){
     if(/[aeiou]/.test(letra)){
-    vocal++;
+    decimoOctavoBloque_vocal++;
   }
   if(/[bcdfghjklmnpqrstvwxyz]/.test(letra)){
-    cons++;
+    decimoOctavoBloque_cons++;
   }
   }
   
@@ -375,3 +375,31 @@ vigesimoPrimerBloque_boton.addEventListener('click', () => {
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#24      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA 
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#25      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+// BLOQUE DE TRABAJO PARA 
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#26      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+// BLOQUE DE TRABAJO PARA 
+
+
+var vigesimoSexto_boton = document.getElementById("vigesimoSexto_boton");
+
+vigesimoSexto_boton.addEventListener("click", ()=>{
+  let vigesimoSexto_input = document.getElementById("vigesimoSexto_input").value;
+document.getElementById("vigesimoSexto_resultado").innerHTML = `El promedio es: <span class="subrayado">${calcularPromedio(vigesimoSexto_input.split(''))}</span>`;
+  
+});
+
+
+function calcularPromedio(array){
+  let promedio = 0;
+  for (var i = 0; i < array.length; i++) {
+    promedio += parseInt(array[i]);
+    
+  }
+  return promedio/array.length;
+}
+
