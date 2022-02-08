@@ -69,10 +69,23 @@ h1{
 /* border: 1px solid yellow; */
 .content{
   z-index: 2;
+  
 }  
+
 .subParrafo{
   font-size: 1.2em;
 }
+
+@media only screen and (max-width: 800px) {
+  .titulo {
+    font-size: 3em;
+  }
+  .subParrafo{
+    font-size: 1em;
+  }
+}
+
+
 /* Cambiamos tamaño a los parrafos del header */
 header p {
   font-size: 1.1em;
