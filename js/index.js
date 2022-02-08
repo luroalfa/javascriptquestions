@@ -184,10 +184,11 @@ undecimoBloque_boton.addEventListener('click', function () {
 
   let num = `${document.getElementById("undecimoBloque_input1").value}`;
   let undecimoBloque_resultado = document.getElementById('undecimoBloque_resultado'),
-    factorial;
-  alert(num);
+     factorial = 1;
+  
   for (let i = 1; i <= num; i++) {
-    factorial += i * (i + 1);
+    factorial = factorial * i;
+    
   }
   undecimoBloque_resultado.innerHTML = `El factorial de ${num} es: <span class"subrayado"> ${factorial}</span> `
 });
