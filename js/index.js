@@ -260,9 +260,60 @@ undecimoBloque_boton.addEventListener('click', function () {
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#21      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA SUSANA VARGAS
+/*Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado,
+  pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25].*/
+var vigesimoPrimerBloque_boton = document.getElementById('vigesimoPrimerBloque_boton');
+var vigesimoPrimerBloque_resultado = document.getElementById('vigesimoPrimerBloque_resultado');
+vigesimoPrimerBloque_boton.addEventListener('click', () => {
+    let vigesimoPrimerBloque_input1 = `${parseInt(document.getElementById("vigesimoPrimerBloque_input1").value)} `,
+      numeros = [],
+      cuadrado = [],
+      pregunta = parseInt(prompt('Ingrese 5 numeros, a continuación, agregue el primero: '));
+      vigesimoPrimerBloque_input1 = pregunta;
+      numeros.push(vigesimoPrimerBloque_input1);
+      cuadrado.push(Math.pow(vigesimoPrimerBloque_input1,2));
+    
+      
+        for(let i=1; i<=5; i++){
+          switch (i){
+            case 2:
+              pregunta =parseInt(prompt('Ingrese el segundo numero:')) ;
+              vigesimoPrimerBloque_input1 = pregunta;
+              numeros.push(vigesimoPrimerBloque_input1);
+              cuadrado.push(Math.pow(vigesimoPrimerBloque_input1,2));
+              break;
+            case 3:
+              pregunta =parseInt(prompt('Ingrese el tercer numero')) ;
+              vigesimoPrimerBloque_input1 = pregunta;
+              numeros.push(vigesimoPrimerBloque_input1);
+              cuadrado.push(Math.pow(vigesimoPrimerBloque_input1,2));
+              break;
+            case 4:
+              pregunta =parseInt(prompt('Ingrese el cuarto numero')) ;
+              vigesimoPrimerBloque_input1 = pregunta;
+              numeros.push(vigesimoPrimerBloque_input1);
+              cuadrado.push(Math.pow(vigesimoPrimerBloque_input1,2));
+              break;  
+            case 5:
+              pregunta =parseInt(prompt('Ingrese el quinto numero')) ;
+              vigesimoPrimerBloque_input1 = pregunta;
+              numeros.push(vigesimoPrimerBloque_input1);
+              cuadrado.push(Math.pow(vigesimoPrimerBloque_input1,2));
+              break;
+            default:
+              if (i>5){
+                alert ('LLegaste al limite');
+              }
+              break;
+            }
+          }
+      
+      
+      vigesimoPrimerBloque_resultado.innerHTML = `Los números elevados del array [${numeros}] son: <span class"subrayado"> [${cuadrado}]</span> `
+         
+});
 
-
-
+ 
 
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#22      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
