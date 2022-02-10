@@ -76,19 +76,13 @@ h1{
   font-size: 1.2em;
 }
 
-@media only screen and (max-width: 800px) {
-  .titulo {
-    font-size: 3em;
-  }
-  .subParrafo{
-    font-size: 1em;
-  }
-}
-
 
 /* Cambiamos tamaño a los parrafos del header */
 header p {
   font-size: 1.1em;
+  text-align: center;
+  margin-right: 150px;
+
 }
 /* Reducimos el tamaño al ul y lo centramos */
 header ul {
@@ -97,8 +91,10 @@ header ul {
 }
 /* Creamos una clase para nuestro titulo general */
 .titulo {
+  
   text-align: center;
-  margin: 20px;
+  margin-right: 150px;
+  
 }
 .cursiva {
   font-style: italic;
@@ -114,8 +110,36 @@ header ul {
 @media only screen and (max-width: 800px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
+    margin-left:65px;
+  }
+   .titulo {
+    margin: auto; 
+    font-size: 3em;
+
+    
+  }
+  .subParrafo{
+    margin: auto;
+    font-size: 1em;
+   
   }
 }
+
+/* Creamos un mediaQuery para que sea un poco adaptable a otros dispositivos menores de 500px */
+@media only screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+   .titulo {
+    font-size:2em;
+  }
+  .subParrafo{
+    font-size: 0.9em;
+  }
+}
+
+
 /* Creamos un subcontenedor para tener por bloques nuestros ejercicios */
 .subContainer {
   margin: 25px;
@@ -128,11 +152,13 @@ header ul {
 .subTitle {
   text-transform: uppercase;
   font-size: 1.5em;
+  margin:.5em;
 }
 /* Modificamos nuestro span contenido en h3  */
 .subTitle span {
   font-weight: bold;
   font-size: 1em;
+  margin:.5em;
 }
 /* Le damos estilos nuestros párrafos generales */
 .subContainer p {

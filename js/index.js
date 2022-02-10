@@ -284,81 +284,28 @@ function VerVocalesCons(texto){
 // BLOQUE DE TRABAJO PARA SUSANA VARGAS
 /*Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado,
   pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25].*/
-var vigesimoPrimerBloque_boton = document.getElementById('vigesimoPrimerBloque_boton');
-var vigesimoPrimerBloque_resultado = document.getElementById('vigesimoPrimerBloque_resultado');
+var vigesimoPrimerBloque_boton = document.getElementById('vigesimoPrimerBloque_boton'),
+    vigesimoPrimerBloque_resultado = document.getElementById('vigesimoPrimerBloque_resultado');
 vigesimoPrimerBloque_boton.addEventListener('click', () => {
-  // let vigesimoPrimerBloque_input1 = `${parseInt(document.getElementById("vigesimoPrimerBloque_input1").value)} `,
-  let numeros = [],
-    cuadrado = [],
-    pregunta = parseInt(prompt('Ingrese 5 numeros, a continuación, agregue el primero: '));
-  let vigesimoPrimerBloque_input1 = pregunta;
-  if (isNaN(pregunta)) {
-    alert("Ingrese un numero  ");
-  } else {
-    vigesimoPrimerBloque_input1 = pregunta;
-    numeros.push(vigesimoPrimerBloque_input1);
-    cuadrado.push(Math.pow(vigesimoPrimerBloque_input1, 2));
-    for (let i = 1; i <= 5; i++) {
-      switch (i) {
-        case 2:
-          pregunta = parseInt(prompt('Ingrese el segundo numero:'));
-          if (isNaN(pregunta)) {
-            alert("Ingrese un numero  ");
-            break;
-          } else {
-            vigesimoPrimerBloque_input1 = pregunta;
-            numeros.push(vigesimoPrimerBloque_input1);
-            cuadrado.push(Math.pow(vigesimoPrimerBloque_input1, 2));
-            break;
+var vigesimoPrimerBloque_input1 = `${(document.getElementById("vigesimoPrimerBloque_input1").value)}`,
+      cuadrados = [],
+      numeros = vigesimoPrimerBloque_input1.split("");
+      
+    
+      if(isNaN(!numeros)){
+        alert('Solo se permiten números, Intente de nuevo!');
+      }else{
+        for(let i=0; i<numeros.length; i++){
+
+          cuadrados.push(Math.pow(numeros[i],2));
           }
-        case 3:
-          pregunta = parseInt(prompt('Ingrese el tercer numero'));
-          if (isNaN(pregunta)) {
-            alert("Ingrese un numero  ");
-            break;
-          } else {
-            vigesimoPrimerBloque_input1 = pregunta;
-            numeros.push(vigesimoPrimerBloque_input1);
-            cuadrado.push(Math.pow(vigesimoPrimerBloque_input1, 2));
-            break;
-          }
-        case 4:
-          pregunta = parseInt(prompt('Ingrese el cuarto numero'));
-          if (isNaN(pregunta)) {
-            alert("Ingrese un numero  ");
-            break;
-          } else {
-            vigesimoPrimerBloque_input1 = pregunta;
-            numeros.push(vigesimoPrimerBloque_input1);
-            cuadrado.push(Math.pow(vigesimoPrimerBloque_input1, 2));
-            break;
-          }
-        case 5:
-          pregunta = parseInt(prompt('Ingrese el quinto numero'));
-          if (isNaN(pregunta)) {
-            alert("Ingrese un numero  ");
-            break;
-          } else {
-            vigesimoPrimerBloque_input1 = pregunta;
-            numeros.push(vigesimoPrimerBloque_input1);
-            cuadrado.push(Math.pow(vigesimoPrimerBloque_input1, 2));
-            break;
-          }
-        default:
-          if (i > 5) {
-            alert('LLegaste al limite');
-          }
-          break;
       }
-    }
-    vigesimoPrimerBloque_resultado.innerHTML = `Los números elevados del array [${numeros}] son: <span class"subrayado"> [${cuadrado}]</span> `
+  vigesimoPrimerBloque_resultado.innerHTML = `Los números elevados del array [${numeros}] son: <span class"subrayado"> [${cuadrados}]</span> `
+    
+  });
+      
 
-  }
-
-
-});
-
-
+  
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#22      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA
 
