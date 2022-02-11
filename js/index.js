@@ -139,7 +139,15 @@ bloqueSetimo__boton.addEventListener('click', function () {
 
 /* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||      BLOQUE#9      |||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 // BLOQUE DE TRABAJO PARA FATIMA PEREZ
+//Programa una función que cuente el número de caracteres de una cadena de texto.
 
+
+var novenoBloque__boton = document.getElementById ("novenoBloque__boton");
+
+novenoBloque__boton.addEventListener ("click", ()=>{
+  let novenoBloque__input = document.getElementById("novenoBloque__input").value;
+  document.getElementById ("novenoBloque__resultado").innerHTML = `La cadena de texto: <span class="subrayado">${novenoBloque__input}</span> <br> Continere: <span class="subrayado">${novenoBloque__input.length}</span> caracteres.`;
+});
 
 
 
