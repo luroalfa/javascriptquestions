@@ -198,7 +198,7 @@ undecimoBloque_boton.addEventListener('click', function () {
     factorial = factorial * i;
 
   }
-  undecimoBloque_resultado.innerHTML = `El factorial de ${num} es: <span class"subrayado"> ${factorial}</span> `
+  undecimoBloque_resultado.innerHTML = `El factorial de ${num} es: <span class="subrayado"> ${factorial}</span> `
 });
 
 
@@ -308,7 +308,7 @@ var vigesimoPrimerBloque_input1 = `${(document.getElementById("vigesimoPrimerBlo
           cuadrados.push(Math.pow(numeros[i],2));
           }
       }
-  vigesimoPrimerBloque_resultado.innerHTML = `Los números elevados del array [${numeros}] son: <span class"subrayado"> [${cuadrados}]</span> `
+  vigesimoPrimerBloque_resultado.innerHTML = `Los números elevados del array [${numeros}] son: <span class="subrayado"> [${cuadrados}]</span> `
     
   });
       
