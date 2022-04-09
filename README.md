@@ -1,12 +1,12 @@
 # Group project about programming logic in JavaScript.
 
-## Este es un repositorio donde encontrarás soluciones de problemas sobre la lógica de programación en JavaScript.
+## This is a repository where you will find solutions to problems about programming logic in JavaScript.
 
-Estos ejercicios fueron recopilados en la web y planteados por el profesor Jon MirCha y nuestro profesor docente Abraham Alonso Quesada Castro de nuestro curso de programación en el INA (Instituto Nacional de Aprendizaje) Costa Rica.
+These exercises were found on the web and proposed by Professor Jon MirCha and our teaching professor Abraham Alonso Quesada Castro from our programming course at the INA (National Learning Institute) Costa Rica.
 
-[Curso de JavaScript del professor Jonathan Mircha](https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
+[JavaScript course by Professor Jonathan Mircha](https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
-## Objetivos del Proyecto.
+## Project objective
 1. Resolver los problemas en JavaScript.
 2. Entrelazar las 3 tecnologías *(Html-Css-JavaScript).*
 3. Utilizar Git/GitHub para llevar el control de nuestro proyecto. 
