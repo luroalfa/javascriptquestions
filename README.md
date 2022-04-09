@@ -12,4 +12,4 @@ These exercises were found on the web and proposed by Professor Jon MirCha and o
 3. We'll use Git/GitHub to keep track of our project.
 4. We'll use Netylify in our project.
 5. We'll solve it together the problems that arise along the way.
-6. We will use Asana. *For task tracking management, work organization, and task delivery planning as a final project.*
+6. We'll use Asana. *For task tracking management, work organization, and task delivery planning as a final project.*
