@@ -7,9 +7,9 @@ These exercises were found on the web and proposed by Professor Jon MirCha and o
 [JavaScript course by Professor Jonathan Mircha](https://www.youtube.com/watch?v=2SetvwBV-SU&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA)
 
 ## Project objective
-1. Resolver los problemas en JavaScript.
-2. Entrelazar las 3 tecnologías *(Html-Css-JavaScript).*
-3. Utilizar Git/GitHub para llevar el control de nuestro proyecto. 
-4. Hacer el deploy de nuestro proyecto utilizando Netlify. *Como hosting, esto nos ayudara a entrelazar GitHub con Netlify nuestro proyecto y llevar un proceso de integración continua y despliegue continuo.*
-5. Resolver en conjunto problemas que se presenten en el camino. *Tanto en temas de JavaScript, temas en GitHub y también en Netlify.*
-6. Utilizaremos Asana. *Para la gestión de seguimiento de tareas, organización de trabajos y planificación de entrega de tareas como proyecto final.*
+1. We'll solve problems in JavaScript.
+2. We'll intertwine the 3 technologies *(Html-Css-JavaScript).*
+3. We'll use Git/GitHub to keep track of our project.
+4. We'll use Netylify in our project.
+5. We'll solve it together the problems that arise along the way.
+6. We will use Asana. *For task tracking management, work organization, and task delivery planning as a final project.*
