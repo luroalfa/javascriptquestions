@@ -1,6 +1,6 @@
-# Proyecto grupal sobre Lógica de programación en JavaScript.
+# Group project about programming logic in JavaScript.
 
-Este es un repositorio donde encontrarás soluciones de problemas sobre la lógica de programación en JavaScript.
+## Este es un repositorio donde encontrarás soluciones de problemas sobre la lógica de programación en JavaScript.
 
 Estos ejercicios fueron recopilados en la web y planteados por el profesor Jon MirCha y nuestro profesor docente Abraham Alonso Quesada Castro de nuestro curso de programación en el INA (Instituto Nacional de Aprendizaje) Costa Rica.
 
